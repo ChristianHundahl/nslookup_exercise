@@ -1,0 +1,7 @@
+NSLOOKUP EXERCISE
+	By Christian Hundahl
+
+The program was vulnerable to Command Line Insertions by the user. 
+A user could use '&&' to add arguments to the input field. To mitigate this,
+a function was added that splits the input into a set, and if the set contains 
+more than one string (ie. argument) the program returns an exception. 
